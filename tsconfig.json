@@ -1,0 +1,52 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "inlineSourceMap": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "declaration": true,
+    "outDir": "dist",
+    "jsx": "preserve",
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types"
+    ],
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./web/*"
+      ],
+      "~src/*": [
+        "./src/*"
+      ],
+      "_build/*": [
+        "./build/*"
+      ],
+      "/@public/*": [
+        "./public/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src",
+    "web"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
+}
